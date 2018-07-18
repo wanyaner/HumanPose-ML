@@ -11,8 +11,8 @@
 
 **Links :**  OpenPose
 
-- Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh. [Realtime multi-person 2d pose estimation using part affinity fields] (https://arxiv.org/abs/1611.08050). In CVPR, 2017.
-- [OpenPose] (https://github.com/CMU-Perceptual-Computing-Lab/openpose) github rep
+- Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh. [Realtime multi-person 2d pose estimation using part affinity fields](https://arxiv.org/abs/1611.08050). In CVPR, 2017.
+- [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) github rep
 
 ### Day 1 : 16 Jul , 2018
 
@@ -56,7 +56,7 @@
 - finished the prototypes of the Yoga-Pose project
 - searched some materials and known that I need learn **JavaScript** and **Python** and the basic logic of **Deep Learning** and how to use **TensorFlow**
 
-**Thoughts :**
+**Thoughts :** Even though make ture that I could use those fancy open-source tools to build my own application, I still know nothing about this area. Every challenging thing the smart people have done, so all I received is just an empty happiness of the mechanical engineering. So, still need to learn the basic concepts of everything! Go on.
 
 **Links:** 
 
