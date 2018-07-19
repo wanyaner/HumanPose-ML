@@ -56,12 +56,12 @@
 - finished the prototypes of the Yoga-Pose project
 - searched some materials and known that I need learn **JavaScript** and **Python** and the basic logic of **Deep Learning** and how to use **TensorFlow**
 
-**Thoughts :** Even though make ture that I could use those fancy open-source tools to build my own application, I still know nothing about this area. Every challenging thing the smart people have done, so all I received is just an empty happiness of the mechanical engineering. So, still need to learn the basic concepts of everything! Go on.
+**Thoughts :** Even though make sure that I could use those fancy open-source tools to build my own application, I still know nothing about this area. Every challenging thing the smart people have done, so all I received is just the empty happiness of the mechanical engineering. So, still need to learn the basic concepts of everything! Go on.
 
 **Links:** 
 
 - Learn Plain [JavaScript](https://medium.mybridge.co/learn-plain-javascript-from-top-tutorials-for-the-past-year-v-2018-d964bc597a45) from Top Articles for the Past Year (v.2018)
-- JavaScript [中文版教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000) from 廖雪峰
+- JavaScript [w3schools - JS](https://www.w3schools.com/) [中文版教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000) 
 - Deep learning course [fast.ai](http://www.fast.ai/)
 - Book: [Computer Vision:Algorithms and Applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf) by Richard Szeliski
 - Course: [Human Motion Modeling and Analysis](http://www.cs.cmu.edu/~yaser/Fall2012_15869.html) by Yaser Sheikh (CMU)
@@ -69,7 +69,21 @@
 - Awesome Video Understanding [materials collection](https://github.com/sujiongming/awesome-video-understanding)
 - Human Activity Recognition on video(DL datasets & models) [知乎：基于深度学习的人体动作识别算法总结](https://zhuanlan.zhihu.com/p/27657196) search result [视频动作识别](https://www.zhihu.com/search?type=content&q=%E8%A7%86%E9%A2%91%E5%8A%A8%E4%BD%9C%E8%AF%86%E5%88%AB)
 
+### Day 4: 19 Jul, 2018
 
+**Today's Progress :** 
+
+- installed Visual Studio Code
+- learnt JavaScript basic part: [high-order function](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014351219769203e3fbe1ed611475db3d439393add8997000) 
+- wrote some JS learning notes
+
+**Thoughts :** implement this application firstly, then consider the deeper problem of building or improving model. 
+
+
+**Tmr-To-Do:**
+
+- JS web framework
+- JS advance course
 
 # This Week To-Do
 
