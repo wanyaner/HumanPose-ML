@@ -75,7 +75,7 @@
 
 - installed Visual Studio Code
 - learnt JavaScript basic part: [high-order function](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014351219769203e3fbe1ed611475db3d439393add8997000) 
-- wrote some JS learning notes
+- wrote some [JS learning notes](/Learning-Notes/JavaScript/)
 
 **Thoughts :** implement this application firstly, then consider the deeper problem of building or improving model. 
 
