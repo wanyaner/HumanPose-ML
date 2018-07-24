@@ -116,6 +116,12 @@
 - installed Node.js / jQuery / PoseNet via npm
 
 
+### Day 9: 24 Jul, 2018
+
+**Today's Progress :** 
+
+- installed mocha chai & gulp
+- followed [MDN web docs](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web#%E5%BB%BA%E7%AB%8B%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99) to build the framework of the web
 
 # This Week To-Do
 
