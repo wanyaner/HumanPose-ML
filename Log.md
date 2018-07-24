@@ -14,6 +14,7 @@
 - Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh. [Realtime multi-person 2d pose estimation using part affinity fields](https://arxiv.org/abs/1611.08050). In CVPR, 2017.
 - [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) github rep
 
+
 ### Day 1 : 16 Jul , 2018
 
 **Today's Progress :** 
@@ -80,32 +81,58 @@
 **Thoughts :** implement this application firstly, then consider the deeper problem of building or improving model. 
 
 
-**Tmr-To-Do:**
+### Day 5: 20 Jul, 2018
 
-- JS web framework
-- JS advance course
+**Today's Progress :** 
+
+- Skype with HJ, talked about the process of the project. He introduced HMM, DTW, RNN, LTMS for the part of comparison. 
+- Made a promise I'll build the whole system in the next two weeks lol...
+
+**Thoughts :** Don't have too much ambition, step by step. 
+
+
+### Day 6: 21 Jul, 2018
+
+**Today's Progress :** 
+
+- tried several methods to solve the problem of DNS changing but failed. It's totally the crush of Godaddy, contacted with the helper but no reply... - Learning: really SHOULD use the third party to manage your DNS.
+
+
+### Day 7: 22 Jul, 2018
+
+**Today's Progress :** 
+
+- found [Move Mirror](https://experiments.withgoogle.com/collection/ai/move-mirror/view) by Google Creative Lab, using [PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) in [TensorFlow.js](https://js.tensorflow.org/tutorials/) 
+- [Real-time Human Pose Estimation in the Browser with TensorFlow.js](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5) 
+- [Move Mirror: An AI Experiment with Pose Estimation in the Browser using TensorFlow.js](https://medium.com/tensorflow/move-mirror-an-ai-experiment-with-pose-estimation-in-the-browser-using-tensorflow-js-2f7b769f9b23) Some ideas of comparison might be useful.
+
+---
+
+### Day 8: 23 Jul, 2018
+
+**Today's Progress :** 
+
+- learnt JavaScript and wrote [some notes](/Learning-Notes/JavaScript/) - Browser / jQuery / Node.js
+- installed Node.js / jQuery / PoseNet via npm
+
+
 
 # This Week To-Do
 
-- update my personal website and take notes; 
-	- Error: can't edit DNS in Godaddy??? Why!
-	- an [article](https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b) about change DNS on Godaddy 
-- learn JavaScript in 3 days 
-	- build the framework of the website
-- learn Python in 2 days 
-- learn the basic concepts of CNN in 3 days
-- learn how to use TensorFlow in 1 day
-- try to use OpenPose/TF.js API to get the output data via the camera&video
-
-# Next Week To-Do
-
 - read more papers in this area
 - finish literature review of the project
-- start to build the comparison part
+- start to build the whole system with JavaScript
+- learn using TensorFlow.js
+
+# More Links:
+
+- [Deep Learning Book](http://www.deeplearningbook.org/)
+- [Detectron](https://github.com/facebookresearch/Detectron) is Facebook AI Research's software system that implements state-of-the-art object detection algorithms, including [Mask R-CNN](https://arxiv.org/abs/1703.06870). It is written in Python and powered by the Caffe2 deep learning framework.
+
 
 # Schedule 
 - 16-22 Jul - Framework - basic concepts/JS/Python/TF
-- 23-29 Jul - comparison part - idea 
+- 23-29 Jul - Framework - build the system with JS
 - 30-5  Aug - a working application
 - 6 -12 Aug - a working and new application
 - 13-19 Aug - Test well

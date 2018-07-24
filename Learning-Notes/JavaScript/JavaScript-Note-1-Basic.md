@@ -393,7 +393,9 @@ ES6标准引入了`rest`参数：
 	
 ---
 
-### Higher-order Function
+## 4 Higher-order Function
+
+### map/reduce
 
 	function add(x, y, f) {
     	return f(x) + f(y);
@@ -401,8 +403,8 @@ ES6标准引入了`rest`参数：
 	
 	add(-5, 6, Math.abs);
 	
- `map()` 
-
+`map()`
+ 
 	function pow(x) {
     	return x * x;
 	}	
@@ -432,5 +434,90 @@ Array的reduce()把一个函数作用在这个Array的[x1, x2, x3...]上，这�
 	
 more reference: [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map); Google AI [MapReduce](https://ai.google/research/pubs/pub62)
 
+### filter()
+
+和map()不同的是，`filter()`把传入的函数依次作用于每个元素，然后根据返回值是true还是false决定保留还是丢弃该元素。
+
+例如，在一个Array中，删掉偶数，只保留奇数：
+
+```
+var arr = [1, 2, 4, 5, 6, 9, 10, 15];
+var r = arr.filter(function (x) {
+    return x % 2 !== 0;
+});
+r; // [1, 5, 9, 15]
+```
+
+利用filter，可以巧妙地去除Array的重复元素：
+
+	var r, arr = ['apple', 'strawberry', 'apple', 'orange', 'orange', 'strawberry'];	
+    	r = arr.filter(function (element, index, self) {
+    		return self.indexOf(element) === index;
+	});
+
+### sort()
+
+- sort()方法默认把所有元素先转换为String再排序 - [10, 2] 
+- 字符串根据ASCII码进行排序 - [B, a]
+
+```
+var arr = [10, 20, 1, 2];
+arr.sort(function (x, y) {
+    if (x < y) {
+        return -1;
+    }
+    if (x > y) {
+        return 1;
+    }
+    return 0;
+});
+console.log(arr); // [1, 2, 10, 20]
+```
+
+---
+
+### Arrow Function
+
+	var fn = x => x * x;
+	
+箭头函数内部的this是词法作用域，由上下文确定。由于this在箭头函数中已经按照词法作用域绑定了，所以，用call()或者apply()调用箭头函数时，无法对this进行绑定，即传入的第一个参数被忽略。
 
 
+```
+// 两个参数:
+(x, y) => x * x + y * y
+
+// 无参数:
+() => 3.14
+
+// 可变参数:
+(x, y, ...rest) => {
+    var i, sum = x + y;
+    for (i=0; i<rest.length; i++) {
+        sum += rest[i];
+    }
+    return sum;
+}
+```
+
+### Generator
+
+generator和函数不同的是，generator由`function*`定义，并且，除了`return`语句，还可以用`yield`返回多次。
+
+```
+function* fib(max) { // Fibonacci
+    var
+        t,
+        a = 0,
+        b = 1,
+        n = 0;
+    while (n < max) {
+        yield a;
+        [a, b] = [b, a + b];
+        n ++;
+    }
+    return;
+}
+```
+
+用`f.next()` 或 `for...of` 调用。
