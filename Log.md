@@ -129,14 +129,19 @@
 
 **Today's Progress :** 
 
+- trained pic/video on OpenPose, got the outputs of json/video
+	- video, 4s, 1.4M, multi-person; returned 204 frames json-files, used 46 mins;
+	- video, 3s, 3.9M, 2-person; returned 105 frames json-files, used 32 mins;
+- tried to write camera.js following PoseNet API demo;
+- edited #inmyfeelingschallenge via iMovie for fun lol;
+- wrote the framework of HTML;
+
 
 **To-Do**
 
-- detailed function - HTML
-- train video
-- openpose / posenet API
-- move mirror/pose tutorials
-- edit video/ #inmyfeelingschallenge via openpose
+- More tutorial about DTW;
+- write similarity.js & data processing code;
+- read papers;
 
 
 

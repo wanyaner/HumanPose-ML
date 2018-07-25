@@ -12,9 +12,11 @@ h1 {
     text-align: center;
 }
 
+p, button {
+    text-align: center;
+}
 p, li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    text-align: center;
 }
