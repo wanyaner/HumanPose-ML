@@ -80,6 +80,7 @@
 
 **Thoughts :** implement this application firstly, then consider the deeper problem of building or improving model. 
 
+---
 
 ### Day 5: 20 Jul, 2018
 
@@ -106,8 +107,6 @@
 - [Real-time Human Pose Estimation in the Browser with TensorFlow.js](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5) 
 - [Move Mirror: An AI Experiment with Pose Estimation in the Browser using TensorFlow.js](https://medium.com/tensorflow/move-mirror-an-ai-experiment-with-pose-estimation-in-the-browser-using-tensorflow-js-2f7b769f9b23) Some ideas of comparison might be useful.
 
----
-
 ### Day 8: 23 Jul, 2018
 
 **Today's Progress :** 
@@ -132,7 +131,7 @@
 - trained pic/video on OpenPose, got the outputs of json/video
 	- video, 4s, 1.4M, multi-person; returned 204 frames json-files, used 46 mins;
 	- video, 3s, 3.9M, 2-person; returned 105 frames json-files, used 32 mins;
-- tried to write camera.js following PoseNet API demo;
+- tried to write camera.js using PoseNet API;
 - edited #inmyfeelingschallenge via iMovie for fun lol;
 - wrote the framework of HTML;
 
@@ -144,6 +143,80 @@
 - read papers;
 
 
+### Day 11: 26 Jul, 2018
+
+**Today's Progress :** 
+
+- learnt Node.js and jQuery
+- tried to build the backend and protocol
+- read the article about Move Mirror by Google
+
+---
+
+### Day 12-15: 27-30 Jul, 2018
+
+**Today's Progress :** 
+
+- talked with HJ
+- Break. 
+- Accompany with friends.
+
+### Day 16: 31 Jul, 2018
+
+**Today's Progress :** 
+
+- explored [an implement DTW with JS](https://github.com/GordonLesti/dynamic-time-warping)
+- read a paper about DTW [Recognition Of Multivariate Temporal Musical Gestures
+Using N-Dimensional Dynamic Time Warping](http://www.nickgillian.com/papers/Gillian_NDDTW.pdf)
+- tested camera.js
+- The Gesture Recognition Toolkit (GRT in [Github](https://github.com/nickgillian/grt), [web-GUI](http://www.nickgillian.com/wiki/pmwiki.php/GRT/GUI) is a cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition.
+- [Creative Applications Network](http://www.creativeapplications.net/)
+- the open source toolkit [OpenFrameworks](https://openframeworks.cc/), [github-repo](https://github.com/openframeworks/openFrameworks)
+
+### Day 17-18: 1 Aug, 2018
+
+**Today's Progress :** 
+
+- Birthday Break 
+
+### Day 19: 3 Aug, 2018
+
+**Today's Progress :** 
+
+- installed Express Frameworks of Node.js [back-end]
+- update the whole framework
+
+```
+/YogaMirror/ym
+    app.js
+    populatedb.js //db in mlab&MongoDB
+    /bin
+        www
+    package.json // de
+    /node_modules
+        [about 4,500 subdirectories and files]
+    /public
+        /images
+        /javascripts
+        /stylesheets
+            style.css
+    /routes
+        index.js
+        users.js
+    /views
+        error.pug
+        index.pug
+        layout.pug
+    /models
+    	teachingVideo.js
+    	realtimeCamera.js
+        ```
+
+- create database via MongoDB and mlab
+	![db](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)
+	- populatedb.js need to be created and updated;
+	`node populatedb <your mongodb url>​​​​`
+	- need to conbine DTW and database in this step;
 
 # This Week To-Do
 

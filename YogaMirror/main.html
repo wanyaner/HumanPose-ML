@@ -3,16 +3,50 @@
     <head>
             <meta charset="utf-8">
             <title>Yoga Mirror</title>
+            <!-- load tensorFlow.js -->
+            <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+            <!-- load PoseNet -->
+            <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+
             <link href="styles/main.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type='text/css'>
+            <!-- load Dynamic Time Warping -->
+            <script src="dynamic-time-warping/src/dynamic-time-warping.js"></script>
+
+            <style>
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    color: black;
+                }
+                .footer-text {
+                    max-width: 600px;
+                    text-align: center;
+                    margin: auto;
+                }
+                @media only screen and (max-width: 600px) {
+                  .footer-text, .dg {
+                    display: none;
+                  }
+                }
+            </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <h1>Yoga Mirror</h1>
 
         <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=E8rC3nXBMiI&autoplay=1"> /* playlist */
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"> /* youtube video playlist */
         </iframe>
+
+        <div id="info" style='display:none'>
+        </div>
+        <div id="loading">
+            Loading the model...
+        </div>
 
         <div id='main' style='display:none'>
             <video id="video" playsinline style=" -moz-transform: scaleX(-1);
@@ -26,10 +60,19 @@
 
         </div>
 
+        <div class="footer">
+            <div class="footer-text">
+                <p>
+                    PoseNet runs with either a <strong>single-pose</strong> or <strong>multi-pose</strong> detection algorithm. The single person pose detector is faster and more accurate but requires only one subject present in the image.
+                    <br>
+                    <br> The <strong>output stride</strong> and <strong>image scale factor</strong> have the largest effects on accuracy/speed. A <i>higher</i> output stride results in lower accuracy but higher speed. A <i>higher</i> image scale factor results in higher accuracy but lower speed.
+                </p>
+            </div>
+        </div>
+
         <h2>the score of similarity is </h2>
 
-        <script> src = "scripts/camera.js"</script>
-        <script> src = "scripts/main.js"</script>
+        <script> src = "scripts/camera_pose.js"</script>
         <script> src = "scripts/similarity.js"</script>
     </body>
 
