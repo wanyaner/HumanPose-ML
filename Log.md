@@ -210,7 +210,7 @@ Using N-Dimensional Dynamic Time Warping](http://www.nickgillian.com/papers/Gill
     /models
     	teachingVideo.js
     	realtimeCamera.js
-        ```
+```
 
 - create database via MongoDB and mlab
 	![db](https://mdn.mozillademos.org/files/14456/MVC%20Express.png)
