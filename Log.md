@@ -217,6 +217,24 @@ Using N-Dimensional Dynamic Time Warping](http://www.nickgillian.com/papers/Gill
 	- populatedb.js need to be created and updated;
 	`node populatedb <your mongodb url>​​​​`
 	- need to conbine DTW and database in this step;
+	
+---
+
+### Day 20-21: 4-5 Aug, 2018
+
+**Today's Progress :** 
+
+- back-end trial
+
+
+### Day 22: 6 Aug, 2018
+
+**Today's Progress :** 
+
+- read paper about DTW
+- wrote [a note about DTW](Learning-Notes/DTW/DTW-Note.md)
+- worte the index of my paper in Google Docs
+
 
 # This Week To-Do
 
