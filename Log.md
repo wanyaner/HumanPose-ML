@@ -227,13 +227,44 @@ Using N-Dimensional Dynamic Time Warping](http://www.nickgillian.com/papers/Gill
 - back-end trial
 
 
-### Day 22: 6 Aug, 2018
+### Day 22-23: 6-7 Aug, 2018
 
 **Today's Progress :** 
 
 - read paper about DTW
 - wrote [a note about DTW](Learning-Notes/DTW/DTW-Note.md)
 - worte the index of my paper in Google Docs
+
+### Day 24: 8-9 Aug, 2018
+
+- draw draft graphical representation of interaction 
+
+![interaction](prototypes/interaction.png)
+
+- wrote draft paper 
+
+
+problems:
+
+- can't test posenet via yalc&yarn
+- haven't process dataset
+ 
+### Day 26: 10 Aug, 2018
+
+**Today's Progress:**
+
+- wrote weekly report
+- tried to fix yarn bug but failed
+- learnt more dtw 
+
+**BUGS:**
+
+- can't test posenet - yarn watch ???
+
+**Problems:**
+
+- about paper: focus on DTW? and pose estimation? Do I need explain the mechinsm of CNN? 
+- for the presentation, do I need to present the result of data?
 
 
 # This Week To-Do
