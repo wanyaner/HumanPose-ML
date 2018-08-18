@@ -249,7 +249,7 @@ problems:
 - can't test posenet via yalc&yarn
 - haven't process dataset
  
-### Day 26: 10 Aug, 2018
+### Day 26-28: 10-12 Aug, 2018
 
 **Today's Progress:**
 
@@ -266,6 +266,49 @@ problems:
 - about paper: focus on DTW? and pose estimation? Do I need explain the mechinsm of CNN? 
 - for the presentation, do I need to present the result of data?
 
+### Day 29-32: 13-16 Aug, 2018
+
+**Today's Progress:**
+
+- recording video [RecordRTC to Nodejs](button[https://github.com/muaz-khan/RecordRTC/blob/master/RecordRTC-to-Nodejs/index.html])
+- cupturing screenshot via camera [Capturing Video in HTML5](https://www.html5rocks.com/en/tutorials/getusermedia/intro/)
+- fixed PoseNet bugs! test successed!
+ 	- Problem: didn't use npm pakege.json
+ 	
+ 	
+### Day 33-34: 17-18 Aug,2018
+
+**Today's Progress:**
+
+- publication abouot posenet
+	- http://arxiv.org/abs/1505.07427 Alex Kendall, Matthew Grimes and Roberto Cipolla "PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization." Proceedings of the International Conference on Computer Vision (ICCV), 2015.
+
+	- http://arxiv.org/abs/1509.05909 Alex Kendall and Roberto Cipolla "Modelling Uncertainty in Deep Learning for Camera Relocalization." The International Conference on Robotics and Automation, 2015.
+
+- A js library about tfjs: [pts](https://github.com/williamngan/pts/tree/master/demo/more/tfjs_posenet)
+- Redesign the framework about this project
+	- Posenet Demo
+	- img vs img - consin
+	- video vs webcam - realtime system
+	- video vs video - dtw - weighted dtw
+
+**Tmr to do:**
+
+- use real yoga imgs & video for Demo
+- get dataset via openPose
+- rebuild the system and test well
+
+**Mon&Tue:**
+
+- try three ways of similarity;
+	- dynamic frame
+	- dtw
+	- weighted dtw
+
+**Wed:**
+
+- design & css
+- copywrite & ppt for demostration;
 
 # This Week To-Do
 

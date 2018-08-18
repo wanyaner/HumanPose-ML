@@ -15,7 +15,7 @@
  * =============================================================================
  */
 import * as posenet from '@tensorflow-models/posenet';
-import dat from 'dat.gui';
+import dat from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/dat.gui';
 import Stats from 'stats.js';
 import {drawKeypoints, drawSkeleton} from './demo_util';
 
