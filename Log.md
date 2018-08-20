@@ -301,7 +301,7 @@ problems:
 **Mon&Tue:**
 
 - try three ways of similarity;
-	- dynamic frame
+	- dynamic frame 
 	- dtw
 	- weighted dtw
 
@@ -310,12 +310,19 @@ problems:
 - design & css
 - copywrite & ppt for demostration;
 
-# This Week To-Do
+### Day 35-36: 19-20 Aug, 2018
 
-- read more papers in this area
-- finish literature review of the project
-- start to build the whole system with JavaScript
-- learn using TensorFlow.js
+**Today's Progress:**
+
+- review the explaination of tfjs [IISourcell](https://github.com/llSourcell/pose_estimation/blob/master/Tensorflow.js%20DensePose.ipynb) 
+- Offical tfjs document [Transfer learning - Train a neural network to predict from webcam data](https://js.tensorflow.org/tutorials/webcam-transfer-learning.html)
+
+- finished the img and video demos;
+- got the output json & skeleton pose via openpose;
+- reviewed all codes;
+- tried to process data - consine similarity
+
+
 
 # More Links:
 
