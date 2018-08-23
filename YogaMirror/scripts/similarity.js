@@ -1,20 +1,4 @@
 
-/** normalizing the array */
-function prepareData(data){
-    var xMean = 0;
-    var yMean = 0;
-    var diffData = [];
-    for (var i=0; i<data.length; i++){
-        xMean = xMean + data[i][0];
-        yMean = yMean + data[i][1];
-    }
-    xMean = xMean/data.length;
-    yMean = yMean/data.length;
-    for (var i=0; i<data.length; i++){
-        diffData[i] = [data[i][0] - xMean, data[i][1] - yMean];
-    }
-    return diffData;
-}
 
 
 var video1 = [3,4,6,7,6];
@@ -31,7 +15,7 @@ var distance = dtw.getDistance();
 var path = dtw.getPath();
 var distance = distance/path.length;
 
-/*
+/** 
 // poseVector1 and poseVector2 are 52-float vectors composed of:
 // Values 0-33: are x,y coordinates for 17 body parts in alphabetical order
 // Values 34-51: are confidence values for each of the 17 body parts in alphabetical order
@@ -39,8 +23,7 @@ var distance = distance/path.length;
 // Again the lower the number, the closer the distance
 
 function weightedDistanceMatching(poseVector1, poseVector2) {
-  let vector1PoseXY = poseVector1.slice(0, 34);
-  let vector1Confidences = poseVector1.slice(34, 51);
+
   let vector1ConfidenceSum = poseVector1.slice(51, 52);
 
   let vector2PoseXY = poseVector2.slice(0, 34);
@@ -58,4 +41,21 @@ function weightedDistanceMatching(poseVector1, poseVector2) {
 
   return summation1 * summation2;
 }
- */
+
+*/
+
+
+function weightedcosine(poseVector1, poseVector2) {
+    let sum1 = 0;
+    let sum2 = 0;
+    for (let i=0; i<poseVector1.length/3;i++) {
+        i = i*3;
+        let confidence = poseVector1[i+2];
+        let tempSum = confidence * Math.abs(poseVector1[i] - poseVector2[i]);
+        tempSum = tempSum + confidence * Math.abs(poseVector1[i+1] - poseVector2[i+1]);
+        sum2 = sum2 + tempSum;
+        sum1 = sum1 + confidence;
+    }
+
+    return (1/sum1) * sum2; 
+}
